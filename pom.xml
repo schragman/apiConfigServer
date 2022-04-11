@@ -28,6 +28,21 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <!--Aktualisieren von Konfigurationen on the fly (Publish and Subscribe) -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+    </dependency>
+
+    <!--Monitoring (hier für Anstoßen des Spring Cloud Bus bei Änderung der Konfigurationen)-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>2.6.4</version>
+    </dependency>
+
+
   </dependencies>
   <dependencyManagement>
     <dependencies>
